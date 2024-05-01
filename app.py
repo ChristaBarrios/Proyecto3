@@ -1,7 +1,7 @@
 from chatbot import ChatModel
 import gradio as gr
 
-chat_model = ChatModel('shrek-script-pdf.pdf')
+chat_model = ChatModel()
 
 def chat_bot(input_question, history):
     response = chat_model.answer(input_question)
